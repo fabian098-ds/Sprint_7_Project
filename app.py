@@ -10,7 +10,7 @@ st.header('Análisis de anuncios de coches en USA')
 
 # Casilla para mostrar histograma
 if st.checkbox('Mostrar histograma del odómetro'):
-    st.write('Histograma de kilometraje de los coches segmentado por su condición')
+    st.write('Histograma de kilometraje de los coches')
     fig = px.histogram(car_data, x='odometer')
     st.plotly_chart(fig, use_container_width=True)
 
